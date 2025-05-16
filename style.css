@@ -333,6 +333,7 @@ footer{
 }
 .heroic .heroic_container1{
     width: 100%;
+    gap: 40px;
 }
 
 .heroic .heroic_container1 h1{
