@@ -7,6 +7,10 @@
     color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav_container{
     margin: 20px;
     padding: 10px;
@@ -70,7 +74,7 @@
     font-size: 3.8rem;
 }
 
-.heroic .heroic_container1 h1 span, .project span{
+.heroic .heroic_container1 h1 span, .project span, .hackathon span, .about span{
     background: linear-gradient(to left, #0eafed, #fe399a);
     -webkit-background-clip: text;  -webkit-text-fill-color: transparent;
 }
@@ -79,16 +83,16 @@
     font-style: italic;
 }
 
-.heroic .heroic_container1 a{
+.heroic .heroic_container1 a, .hackathon .hackathon_container1 a{
     text-decoration: none;
     width: 15vw;
-    border-radius: 50px;
+    border-radius: 5px;
     padding: 14px;
     background: linear-gradient(to left, #0eafed, #fe399a);
     font-weight: 500;
 }
 
-.heroic .heroic_container1 a:hover{
+.heroic .heroic_container1 a:hover,.hackathon .hackathon_container1 a:hover{
     background: #fe399a;
 }
 
@@ -116,11 +120,11 @@
 }
 
 .project .project_container1 h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 20px;
 }
 
-.project .project_container1 p{
+.project .project_container1 p, .hackathon .hackathon_container1 p, .hackathon_container2_sub1_2 p{
     font-style: italic;
 }
 
@@ -130,13 +134,12 @@
 
 .project_container_sub1, .project_container_sub2, .project_container_sub3{
     border-top: 2px solid #fff;
-    border-bottom: 5px solid #0eafed;
+    border-bottom: 10px solid #0eafed;
     background-color: #252627;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    border-radius: 20px 20px 0px 0px;
     height: 300px;
     width: 300px;
     margin: 20px;
@@ -156,3 +159,102 @@
     background-color: #252627;
 }
 
+.hackathon{
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    gap: 80px;
+    width: auto;
+}
+
+.hackathon .hackathon_container1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.hackathon .hackathon_container1 h1{
+    font-size: 3rem;
+}
+
+.hackathon .hackathon_container2{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.hackathon_container2_sub1, .hackathon_container2_sub2, .hackathon_container2_sub3{
+    display: flex;
+    gap: 10px;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.hackathon_container2_sub1{
+    display: flex;
+    gap: 20px;
+}
+
+.hackathon_container2_sub1 .hackathon_container2_sub1_1 h3, .hackathon_container2_sub2 .hackathon_container2_sub1_1 h3, .hackathon_container2_sub3 .hackathon_container2_sub1_1 h3{
+    background-color: #fff;
+    padding: 15px;
+    color: #252627;
+    border-radius: 100%;
+    font-weight: 900;
+}
+
+.hackathon_container2_sub1_2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hackathon_container2_sub1_2 a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hackathon_container2_sub1_2 a:hover{
+    color: #fff;
+    text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+.about{
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    gap: 80px;
+    width: auto;
+}
+
+.about .about_container1 h1{
+    font-size: 5rem;
+}
+
+.about .about_container2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about_container2_sub1{
+    display: flex;
+    gap: 30px;
+    text-align: justify;
+}
+
+.about_container2_sub2{
+    display: flex;
+    gap: 100px;
+}
+
+.about_container2_sub2 h1{
+    font-size: 4rem;
+}
+
+.about_container2_sub2 p{
+    font-size: 1.5rem;
+}
