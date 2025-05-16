@@ -318,7 +318,58 @@ footer{
 /* -----------------Responsive--------------- */
 
 @media (max-width: 768px) {
-  .heroic_container2 {
+
+.heroic{
+    display: flex;
+    flex-direction: column;
+}
+
+.heroic_container2 img{
     display: none;
-  }
+}
+
+.heroic .heroic_container1 h1{
+    font-size: 2.2rem;
+}
+
+.heroic .heroic_container1 a, .hackathon .hackathon_container1 a{
+    width: 100%;
+}
+
+.project .project_container1 h1,.hackathon .hackathon_container1 h1{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.project_container2{
+    display: flex;
+    flex-direction: column;
+}
+
+.hackathon{
+    display: flex;
+    flex-direction: column;
+}
+
+.hackathon .hackathon_container1 a{
+    text-align: left;
+}
+
+.hackathon_container1{
+    text-align: center;
+}
+
+.hackathon_container1 h1{
+    font-size: 2rem;
+}
+
+.hackathon_container2_sub1 .hackathon_container2_sub1_1, .hackathon_container2_sub2 .hackathon_container2_sub1_1, .hackathon_container2_sub3 .hackathon_container2_sub1_1{
+    display: none;
+}
+
+.hackathon_container2_sub1, .hackathon_container2_sub2, .hackathon_container2_sub3{
+    display: flex;
+    flex-direction: column;
+}
+
 }
