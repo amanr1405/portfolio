@@ -318,6 +318,13 @@ footer{
 /* -----------------Responsive--------------- */
 
 @media (max-width: 768px) {
+.nav_container .nav_container1{
+    width: 100vw;
+}
+
+.nav_container .nav_container2{
+    width: 100vw;
+}
 
 .heroic{
     display: flex;
@@ -370,6 +377,45 @@ footer{
 .hackathon_container2_sub1, .hackathon_container2_sub2, .hackathon_container2_sub3{
     display: flex;
     flex-direction: column;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+.about .about_container1 h1{
+    font-size: 2rem;
+}
+
+.about_container2_sub1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about .about_container2 .about_container2_sub2{
+    gap: 50px;
+}
+
+.about .about_container2 .about_container2_sub2 h1{
+    font-size: 2rem;
+}
+
+.about .about_container2 .about_container2_sub2 p{
+    font-size: 1rem;
+}
+
+.contact{
+    flex-direction: column;
+}
+
+.contact .contact_container1 h1{
+    font-size: 2rem;
+}
+
+.contact .contact_container1 .contact_container1_sub1 a,.contact .contact_container1 .contact_container1_sub2 a{
+    font-size: 1rem;
 }
 
 }
