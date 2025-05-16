@@ -329,24 +329,31 @@ footer{
 .heroic{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin:20px
+    margin: 10px;
+}
+.heroic .heroic_container1{
+    width: 100%;
+}
+
+.heroic .heroic_container1 h1{
+    font-size: 3rem;
 }
 
 .heroic_container2 img{
     display: none;
 }
 
-.heroic .heroic_container1 h1{
-    font-size: 2.2rem;
-}
-
 .heroic .heroic_container1 a, .hackathon .hackathon_container1 a{
     width: 100%;
 }
 
+.project .project_container1{
+    width: 100vw;
+    padding: 10px;
+}
+
 .project .project_container1 h1,.hackathon .hackathon_container1 h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 10px;
 }
 
@@ -358,6 +365,9 @@ footer{
 .hackathon{
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+    gap: 10px;
 }
 
 .hackathon .hackathon_container1 a{
@@ -384,6 +394,9 @@ footer{
 .about{
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+    gap: 20px;
 }
 
 .about .about_container1 h1{
@@ -410,6 +423,9 @@ footer{
 
 .contact{
     flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+    padding-top: 50px;
 }
 
 .contact .contact_container1 h1{
