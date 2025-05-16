@@ -329,6 +329,8 @@ footer{
 .heroic{
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    margin:20px
 }
 
 .heroic_container2 img{
