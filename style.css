@@ -250,7 +250,6 @@ html {
 .about_container2_sub1{
     display: flex;
     gap: 30px;
-    text-align: justify;
 }
 
 .about_container2_sub2{
