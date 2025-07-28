@@ -16,46 +16,61 @@ document.addEventListener("DOMContentLoaded", function () {
   particleElement.style.backgroundSize = "14px 24px";
 
   // Particle config
-  particlesJS("particles-js", {
-    particles: {
-      number: {
-        value: 60,
-        density: { enable: true, value_area: 800 },
-      },
-      color: { value: ["#e91e63", "#00bcd4", "#9c27b0", "#8bc34a", "#ffeb3b"] },
-      shape: { type: "circle" },
-      opacity: {
-        value: 0.9,
-        random: true,
-        anim: { enable: true, speed: 1, opacity_min: 0.2, sync: false },
-      },
-      size: {
-        value: 4,
-        random: true,
-        anim: { enable: true, speed: 2, size_min: 0.5, sync: false },
-      },
-      move: {
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 40,
+      density: {
         enable: true,
-        speed: 1.2,
-        direction: "none",
-        random: true,
-        straight: false,
-        out_mode: "out",
-        bounce: false,
-      },
+        value_area: 1000
+      }
     },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" },
-        resize: true,
-      },
-      modes: {
-        grab: { distance: 140, line_linked: { opacity: 0.3 } },
-        push: { particles_nb: 3 },
-      },
+    color: {
+      value: ["#a0e9ff", "#faff6d", "#ffb6ff", "#baffc9"]
     },
-    retina_detect: true,
-  });
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 0.8,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0.2,
+        sync: false
+      }
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 3,
+        size_min: 0.3,
+        sync: false
+      }
+    },
+    move: {
+      enable: true,
+      speed: 0.5,
+      direction: "top",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false
+    },
+    line_linked: {
+      enable: false
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
 });
