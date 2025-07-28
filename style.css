@@ -211,7 +211,7 @@ html {
 }
 
 .hackathon_container2_sub1, .hackathon_container2_sub2, .hackathon_container2_sub3{
-    background-color: #303030;
+    background-color: #000;
     display: flex;
     gap: 10px;
     border-radius: 3px;
