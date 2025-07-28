@@ -29,7 +29,7 @@ hr{
     width: 50%;
     height: 3px;
     border: none;
-    background: linear-gradient(to left, #0eafed, #fe399a);
+    background: #fff;
 }
 
 html {
