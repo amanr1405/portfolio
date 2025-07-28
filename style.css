@@ -16,6 +16,12 @@ body{
   color: white;
 }
 
+ .main-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+}
+
  #particles-js {
       position: fixed;
       width: 100%;
