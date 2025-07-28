@@ -31,7 +31,7 @@ html {
 }
 
 .nav_container{
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
