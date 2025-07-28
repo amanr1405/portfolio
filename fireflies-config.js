@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   particleElement.style.backgroundImage =
     "linear-gradient(to right, rgba(79, 79, 79, 0.18) 1px, transparent 1px), " +
     "linear-gradient(to bottom, rgba(79, 79, 79, 0.18) 1px, transparent 1px)";
-  particleElement.style.backgroundSize = "14px 24px";
+  particleElement.style.backgroundSize = "50px 50px";
 
   // Particle config (no connecting lines)
   particlesJS("particles-js", {
