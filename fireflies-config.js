@@ -1,58 +1,61 @@
-particlesJS("particles-js", {
-  particles: {
-    number: {
-      value: 40,
-      density: {
+// fireflies-config.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const particleElement = document.getElementById("particles-js");
+
+  // Add background grid lines
+  particleElement.style.position = "fixed";
+  particleElement.style.top = "0";
+  particleElement.style.left = "0";
+  particleElement.style.width = "100%";
+  particleElement.style.height = "100%";
+  particleElement.style.zIndex = "-1";
+  particleElement.style.backgroundImage =
+    "linear-gradient(to right, rgba(79, 79, 79, 0.18) 1px, transparent 1px), " +
+    "linear-gradient(to bottom, rgba(79, 79, 79, 0.18) 1px, transparent 1px)";
+  particleElement.style.backgroundSize = "14px 24px";
+
+  // Particle config
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 60,
+        density: { enable: true, value_area: 800 },
+      },
+      color: { value: ["#e91e63", "#00bcd4", "#9c27b0", "#8bc34a", "#ffeb3b"] },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.9,
+        random: true,
+        anim: { enable: true, speed: 1, opacity_min: 0.2, sync: false },
+      },
+      size: {
+        value: 4,
+        random: true,
+        anim: { enable: true, speed: 2, size_min: 0.5, sync: false },
+      },
+      move: {
         enable: true,
-        value_area: 1000
-      }
+        speed: 1.2,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+      },
     },
-    color: {
-      value: ["#ffe066", "#a0e9ff", "#baffc9", "#fff4a3", "#ffd6ff"]
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: true, mode: "push" },
+        resize: true,
+      },
+      modes: {
+        grab: { distance: 140, line_linked: { opacity: 0.3 } },
+        push: { particles_nb: 3 },
+      },
     },
-    shape: {
-      type: "circle"
-    },
-    opacity: {
-      value: 0.8,
-      random: true,
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0.2,
-        sync: false
-      }
-    },
-    size: {
-      value: 3,
-      random: true,
-      anim: {
-        enable: true,
-        speed: 4,
-        size_min: 0.3,
-        sync: false
-      }
-    },
-    move: {
-      enable: true,
-      speed: 0.5,
-      direction: "top",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false
-    },
-    line_linked: {
-      enable: false
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: false },
-      onclick: { enable: false },
-      resize: true
-    }
-  },
-  retina_detect: true
+    retina_detect: true,
+  });
 });
