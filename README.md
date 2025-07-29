@@ -35,6 +35,6 @@ A clean, elegant, and responsive **Portfolio Website** built using **HTML**, **C
 portfolio/
 ├── index.html # Main HTML file
 ├── style.css # CSS styling file
-└── script.js # JavaScript for interactivity
+└── script.js # JavaScript for Patterns
 
 Made with ❤️ by **Aman**
